@@ -44,7 +44,7 @@ module.exports = {
 
         const book = await connection('books')
             .where('id', id)
-            .select('user_id')
+            // .select('user_id')
             .first();
 
             if ( book.user_id !== user_id ) {
